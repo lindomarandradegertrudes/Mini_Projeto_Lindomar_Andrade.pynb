@@ -6,7 +6,7 @@ O objetivo do projeto é consolidar conceitos fundamentais de Python, Pandas, Nu
 
 ---
 
-## Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 O projeto foi estruturado seguindo as melhores práticas de organização de repositórios de ciência de dados:
 
@@ -79,7 +79,7 @@ Você pode executar este projeto de duas formas principais:
 
 ---
 
-##  Resumo do Pipeline de Análise (RF01 a RF12)
+## 📈 Resumo do Pipeline de Análise (RF01 a RF12)
 
 1. **RF01 - Criação do Dataset**: Geração de dados de vendas sintéticos simulando o mundo real com nulos (`None` em quantidade/preço), string com espaços extras e datas com formato textual inválido ("DATA INVALIDA").
 2. **RF02 - Inspeção de Dados**: Diagnóstico inicial das dimensões (`.shape`), tipos de dados (`.dtypes`), valores faltantes (`.isnull().sum()`) e estatísticas descritivas básicas.
@@ -112,14 +112,14 @@ Você pode executar este projeto de duas formas principais:
 
 ##  Decisão sobre Tratamento de Outliers (v1 vs v2)
 
-> [!NOTE]
+> 
 > Para a consolidação no dataset final (`data/final/vendas_final.csv`), optamos pela **Versão v2 (outliers tratados)**.
 > **Justificativa**: Em uma análise de varejo, a presença de outliers em quantidade vendida ou valor total de transação (geralmente compras institucionais ou erros operacionais atípicos) pode distorcer métricas agregadas cruciais como o ticket médio regional e o comportamento sazonal de vendas da empresa. A remoção dos outliers assegura que os relatórios reflitam o padrão de consumo da grande maioria dos clientes, auxiliando em tomadas de decisões de marketing e estoque com menor variância estatística.
 > Contudo, a versão `v1` foi preservada em `data/processed/v1_com_outliers/` para fins comparativos e de auditoria de compras de grande escala.
 
 ---
 
-## Próximos Passos e Melhorias Futuras
+## 🚀 Próximos Passos e Melhorias Futuras
 1. **Modelagem Preditiva**: Integração de modelos de séries temporais (como ARIMA ou Prophet) sobre a base consolidada para prever a receita total dos próximos trimestres.
 2. **Integração com Dashboards**: Criação de uma interface web dinâmica de visualização usando Streamlit para permitir filtros dinâmicos de categoria e região em tempo real.
 3. **Automação de Pipeline**: Implementação de testes unitários (`pytest`) sobre as funções de limpeza de dados e orquestração do pipeline em um script de CI/CD (ex: GitHub Actions) para rodar a cada novo lote de dados imputado.
