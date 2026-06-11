@@ -6,7 +6,7 @@ O objetivo do projeto é consolidar conceitos fundamentais de Python, Pandas, Nu
 
 ---
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 O projeto foi estruturado seguindo as melhores práticas de organização de repositórios de ciência de dados:
 
