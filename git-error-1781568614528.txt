@@ -1,2 +1,0 @@
-> git push -u origin main
-fatal: unable to access 'https://github.com/<username>/<correct-repo>.git/': The requested URL returned error: 400
