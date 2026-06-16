@@ -43,7 +43,7 @@ projeto/
 
 ##  Instalação e Execução
 
-Você pode executar este projeto de duas formas principais:
+Você pode executar este projeto de duas formas principais:::
 
 ### Opção 1: No Google Colab (Recomendado)
 1. Faça o upload do arquivo `notebooks/dataview.ipynb` no Google Colab.
